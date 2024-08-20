@@ -1,3 +1,7 @@
+function quantidadeCaracteres(str) {
+    return str.length >= 8 && str.length <= 16;
+}
+
 function letraMaiuscula(str){
     return /[A-Z]/.test(str);
 }
@@ -14,36 +18,21 @@ function verificarSenha(){
 
     var senha = String(document.getElementById("senha").value);
 
-    estado = 0;
-    
-    if (!letraMaiuscula(senha)) estado += 1;
-    if (!possuiNumeros(senha)) estado += 2;
-    if (!possuiCaracteresEspeciais(senha)) estado += 4;
+    estado = "";
+   
+    if (!quantidadeCaracteres(senha)) estado += 1;
+    if (!letraMaiuscula(senha)) estado += 2;
+    if (!possuiNumeros(senha)) estado += 4;
+    if (!possuiCaracteresEspeciais(senha)) estado += 8;
 
     switch (estado) {
-        case 1:
-            document.getElementById("resultado").innerHTML = "A senha não contém letras maiúsculas. Por favor, digite novamente.";
-            break;
-        case 2:
-            document.getElementById("resultado").innerHTML = "A senha não contém números. Por favor, digite novamente.";
-            break;
-        case 3:
-            document.getElementById("resultado").innerHTML = "A senha não contém letras maiúsculas e números. Por favor, digite novamente.";
-            break;
-        case 4:
-            document.getElementById("resultado").innerHTML = "A senha não contém caracteres especiais. Por favor, digite novamente.";
-            break;
-        case 5:
-            document.getElementById("resultado").innerHTML = "A senha não contém letras maiúsculas e caracteres especiais. Por favor, digite novamente.";
-            break;
-        case 6:
-            document.getElementById("resultado").innerHTML = "A senha não contém números e caracteres especiais. Por favor, digite novamente.";
-            break;
-        case 7:
-            document.getElementById("resultado").innerHTML = "A senha não contém letras maiúsculas, números e caracteres especiais. Por favor, digite novamente.";
+        case "":
+            document.getElementById("resultado").innerHTML = "Senha criada com sucesso!";
             break;
         default:
-            document.getElementById("resultado").innerHTML = "A senha foi criada com sucesso!";
+            document.getElementById("resultado").innerHTML = "Por favor digite novamente!<br>Sua senha deve conter:<br><br>-Entre 8 e 16 caracteres<br>-Pelo menos uma letra maiúscula<br>-Pelo menos um número<br>-Pelo menos um caractere especial" ;
             break;
+
     }
 }
+

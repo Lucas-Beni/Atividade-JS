@@ -1,24 +1,22 @@
 function conversor() {
-       let valor = document.getElementById("Digite seu valor aqui").value
-       let dolar1 = valor / 5
-       let euro1 = valor / 5.5
-       let libra1 = valor / 6
-       let dolar2 = 
-       let euro2 = 
-       let libra2 = 
+       var valor = parseFloat(document.getElementById("moeda").value);
+       let select = document.getElementById("select").value;
    
    switch(true){
-       case (dolar2):
-           document.getElementById("resultado").innerHTML = "O valor " + valor + " transformado em dolar fica no valor de " + dolar1 + " dolares.";
-           break;
+       case (select == "dolar"):
+            let dolar = valor / 5
+            document.getElementById("resultado").innerHTML = "O valor de " + valor + " reais transformado em dólares fica no valor de " + dolar.toFixed(2) + " dólares.";
+            break;
    
-       case (euro2):
-        document.getElementById("resultado").innerHTML = "O valor " + valor + " transformado em euro fica no valor de " + euro1 + " euro.";
-           break;
+       case (select == "euro"):
+            let euro = valor / 5.5
+            document.getElementById("resultado").innerHTML = "O valor de " + valor + " reais transformado em euros fica no valor de " + euro.toFixed(2) + " euros.";
+            break;
    
-       case (libra2):
-           document.getElementById("resultado").innerHTML = "o valor " + valor + " trannsformado em libra fica o valor de " + libra1 + "libras";
-           break;
+       case (select == "libra"):
+            let libra = valor / 6
+            document.getElementById("resultado").innerHTML = "o valor de " + valor + " reais trannsformado em libras esterlinas fica o valor de " + libra.toFixed(2) + " libras esterlinas";
+            break;
            
        
    }

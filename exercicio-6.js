@@ -5,7 +5,7 @@ function recomendarfilme() {
 
 switch(true){
     case (idade > 0 && idade <=12 ):
-        texto = "Recomendamos filmes de Animação, Aventura"
+        texto = "Recomendamos filmes de Animação ou Aventura"
         break;
 
     case (idade > 12 && idade <= 17 ):
@@ -17,7 +17,7 @@ switch(true){
         break;
         
     default:
-        texto = "Recomendamos filmes de Romance, Documentário"
+        texto = "Recomendamos filmes de Romance ou Documentário"
         break;
     
 }

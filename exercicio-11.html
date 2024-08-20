@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="exercicio-11.js"> </script>
+    <script src="exercicio-11.js"></script>
     <title>Conversão de moeda</title>
 </head>
 <body>
     <input type="number" id="moeda" placeholder="digite o valor em reais">
-    <label for="moeda2">
-        <select name="" id="moeda2">
-            <option value=""></option>
-            <option value="dolar">dolar</option>
-            <option value="euro">euro</option>
-            <option value="libra">libra</option>
-        </select>
-    </label>
+    <select name="select" id="select">
+        <option value=""></option>
+        <option value="dolar">Dólar</option>
+        <option value="euro">Euro</option>
+        <option value="libra">Libra Esterlina</option>
+    </select>
     <button onclick="conversor()">Converter</button>
-    <p id="resultado"></p>
+    <div id="resultado"></div>
 </body>
 </html>
