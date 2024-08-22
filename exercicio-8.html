@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="exercicio-8.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="exercicio-8.js"> </script>
     <title>Jogos</title>
 </head>
 <body>
-    <input type="number" id="nivel">
-    <button onclick="nivel()">Ver nivel</button>
-    <p id="resultado"></p>
+    <a href="pagina1.html"><- Voltar</a>
+    <h1>Descubra seu nível!</h1>
+    <div class="retangulo">
+        <div class="verificar">
+            <input type="number" id="nivel" placeholder="Digite seu nível">
+            <button onclick="nivel()">Ver nivel</button>
+        </div>
+        <p class="resultado" id="resultado"></p>
+    </div>
 </body>
 </html>

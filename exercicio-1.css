@@ -9,6 +9,19 @@ a{
     text-decoration: none;
 }
 
+.lampada img{
+    position: absolute;
+    right: 23vw;
+    top: 10vh;
+    transform: rotate(30deg);
+}
+
+.genio img{
+    position: absolute;
+    width: 30vw;
+    top: 40vh;
+}
+
 .titulo{
     text-align: center;
     padding-top: 5vh;

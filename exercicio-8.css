@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body{
+    background-image:url(img/streetfighter.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Jersey 10";
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #2f00ff;
+}
+
+h1{
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    transform: translate(-50%);
+    color: #db2721;
+    font-size: 2.5vw;
+}
+
+.retangulo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 0vh;
+    width: 0;
+    padding: 10px;
+    border-radius: 40px;
+    background-image:radial-gradient(#ffffff93,#0000009c) ;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    background-position: center center;
+
+    & button{
+        height: 6.5vh;
+        width: 3.3vw;
+        background-color: #04916e;
+        border: none;
+        color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    & input{
+        height: 0vh;
+        width: 0vw;
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0;
+        font-size: 2vh;
+        transition: .5s;
+        color: #fff;
+    }
+
+    & ::-webkit-input-placeholder{
+        color: #fff;
+    }
+
+    .resultado{
+        opacity: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        color: #000000;
+        font-size: 1.5vw;
+
+    }
+
+    .verificar{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.retangulo:hover{
+    height: 40vh;
+    width: 40vw;
+
+    & input{
+        height: 6vh;
+        width: 13vw;
+    }
+
+    .resultado{
+        width: 15vw;
+        opacity: 1;
+    }
+}
