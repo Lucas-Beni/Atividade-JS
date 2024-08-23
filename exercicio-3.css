@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(img/exercicio-3/escola-2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.botao{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+    & button{
+        width: 6vw;
+        height: 7vh;
+        border-radius: 10px;
+        background-color: #47db34;
+    }
+}
+
+.botao p{
+    font-family: "Moderustic", sans-serif;
+    font-size: 0.7vw;
+}
+
+.central{
+    width: 25vw;
+    height: 27vh; 
+    background-color: #3498db; 
+    border: 2px solid #2c3e50; 
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    & ::-webkit-input-placeholder{
+        font-size: 0.8vw;
+    }
+
+    & input{
+        width: 15vw;
+        height: 4vh;
+        border-radius: 15px;
+        outline: none;
+    }
+    
+}
+
+#media{
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%);
+    font-family: "Moderustic", sans-serif;
+    color: #ffffff;
+    font-size: 1.5vw;   
+}
+
+
+.h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-family: "Moderustic", sans-serif;
+    color: #ffffff;
+    font-size: 1vw;
+}

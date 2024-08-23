@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url(img/exercicio-4/final2.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.valores{
+    position: absolute;
+    top: 50vh;
+    left: 140vh;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+.central{
+    width: 500px;
+    height: 250px; 
+    background-color: #e6b280; 
+    border: 5px solid #ffffff; 
+    border-radius: 10px;
+    z-index: -1;
+    position: absolute;
+    left: 64vh;
+    top: 25vh;
+}
+
+.h1{
+    width: 400px;
+    height: 35px ;
+    position: absolute;
+    top: 11vh;
+    left: 114vh;
+    transform: translate(-50%, -50%);
+    font-family: "Moderustic", sans-serif;
+    color: #ffffff;
+
+}
+
+#resultado{
+    width: 600px;
+    height: 35px ;
+    position: absolute;
+    top: 78vh;
+    left: 111.2vh;
+    transform: translate(-50%, -50%);
+    font-family: "Moderustic", sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    
+}
+
+.btn{
+    position: absolute;
+    top: 60vh;
+    left: 140vh;
+    transform: translate(-50%, -50%);
+    width: 200px;
+
+}
+
+.input input{
+    position: absolute;
+    top: 50vh;
+    left: 100vh;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}

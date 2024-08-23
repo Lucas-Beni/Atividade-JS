@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Média escolar</title>
+    <link rel="stylesheet" href="exercicio-3.css">
     <script src="exercicio-3.js"></script>
 </head>
 <body>
-    <h1>Descubra a sua média!<h1>
-    <input type="number" id="nota1" placeholder="Primeira nota">
-    <input type="number" id="nota2" placeholder="Segunda nota">
-    <input type="number" id="nota3" placeholder="Terceira nota">
-    <input type="number" id="nota4" placeholder="Quarta nota">
-    <button onclick="notamedia()">Ver sua nota</button>
-    <div id="media"></div>
+    <div class="h1">
+        <h1>Descubra a sua média!<h1>
+    </div>
+    <div class="central">
+        <input type="number" id="nota1" placeholder="Primeira nota"> 
+        <input type="number" id="nota2" placeholder="Segunda nota">  
+        <input type="number" id="nota3" placeholder="Terceira nota"> 
+        <input type="number" id="nota4" placeholder="Quarta nota">   
+    </div>
+    <h1>
+        <div id="media"></div>
+    </h1>
+    <div class="botao">
+        <button onclick="notamedia()"><p>Ver seu resultado</p></button>
+    </div>
 </body>
 </html>

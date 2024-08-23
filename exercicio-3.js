@@ -6,12 +6,12 @@ function notamedia() {
     let resultado = (prova1 + prova2 + prova3 + prova4) / 4
 
 if  (resultado >= 7) {
-    document.getElementById("media").innerHTML = "Você está aprovado";
+    document.getElementById("media").innerHTML = "Você está aprovado!";
 }
 else if(resultado>=5 && resultado < 7){
-    document.getElementById("media").innerHTML = "Você está de recuperação";
+    document.getElementById("media").innerHTML = "Você está de recuperação!";
 }  
 else{
-    document.getElementById("media").innerHTML = "Você está repovado";
+    document.getElementById("media").innerHTML = "Você está reprovado!"
 }
 }
