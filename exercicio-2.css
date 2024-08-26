@@ -8,11 +8,18 @@ body{
     min-height: 100vh;
     background-color: aqua;
 }
-#ano {
-    
-}
-#resultado {
 
+a{
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+#resultado {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -30%);
+    font-size: 1.5vw;
 }
 
 .calendario{
@@ -26,6 +33,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: .5s;
 
     & button{
