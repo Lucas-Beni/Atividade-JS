@@ -12,6 +12,9 @@ h1{
 
 body{
     min-height: 100vh;
+    background-image: url(img/pagina1/javascipt.png);
+    background-repeat: no-repeat;
+    background-size:cover;
 
     & a{
         text-decoration: none;

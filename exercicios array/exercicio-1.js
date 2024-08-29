@@ -1,13 +1,12 @@
 function somaArray(){
 
-    let numeros = [4, 9, 10, 15]
+    let numeros = document.getElementById("numero").value.split(", ")
 
     let soma = 0
 
     numeros.forEach(function(numero){
-        soma += numero
+        soma += parseInt(numero)
     })
 
-    document.getElementById("resultado").innerHTML = `a soma de todos esses números é: ${soma}` 
-    
+    document.getElementById("resultado").innerHTML = `A soma de todos esses números é: ${soma}` 
 }
