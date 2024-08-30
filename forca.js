@@ -12,6 +12,15 @@ let tentativas = 0;
 const maxTentativas = 6;
 
 while (tentativas < maxTentativas){
+
+    if (palavraSecreta.includes("-")) {
+        for(let i = 0; i < tamanhoPalavra; i++){
+            if(palavraSecreta[i] === "-"){
+                letrasAcertadas = letrasAcertadas.slice(0,i) + "-" + letrasAcertadas.slice(i + 1)
+            }
+        }
+    }
+
     let letraChutada = prompt(`Palavra: ${letrasAcertadas}\nTentativas: ${tentativas}\nLetras já chutadas: ${letrasJaChutadas}\nLetras erradas: ${letrasErradas}\nDigite uma letra: `).toUpperCase()
 
     if (letrasJaChutadas.includes(letraChutada) || letrasAcertadas.includes(letraChutada) || letrasErradas.includes(letraChutada)){
