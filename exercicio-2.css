@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,8 @@
 
 body{
     min-height: 100vh;
-    background-color: aqua;
+    background-color: #D9D9D9;
+    font-family: "SUSE", sans-serif;
 }
 
 a{
@@ -36,6 +39,7 @@ h1{
     transform: translate(-50%, -50%);
     width: 0vw;
     height: 0vh;
+    filter:drop-shadow(0px 0px 12px rgb(0, 0, 0));
     background-image: url(img/exercicio-2/calendario.png);
     background-repeat: no-repeat;
     background-size: cover;
