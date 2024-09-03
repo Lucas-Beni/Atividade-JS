@@ -11,11 +11,28 @@ a{
 
 body{
     min-height: 100vh;
+    background-image: url(img/exercicio-6/cinema.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .verificar{
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
+    width: 18vw;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: aqua;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & input{
+        background-color: transparent;
+        outline: none;
+        border: none;
+    }
 }
