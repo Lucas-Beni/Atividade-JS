@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: "Nerko One";
 }
 
 .verificar{
@@ -23,16 +26,61 @@ body{
     left: 50%;
     width: 18vw;
     height: 5vh;
+    border: 2.5px solid #000;
     border-radius: 20px;
     background-color: aqua;
     transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     & input{
         background-color: transparent;
         outline: none;
         border: none;
+        font-family: "Nerko One";
+        font-size: .9vw;
     }
+
+    & ::-webkit-input-placeholder{
+        color: #000;
+    }
+
+    & button{
+        height: 4vh;
+        width: 8vw;
+        border-radius: 15px;
+        font-size: .9vw;
+        font-family: "Nerko One";
+    }
+}
+
+#resultado{
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.pilar1{
+    position: absolute;
+    left: 10vw;
+    color: #fff;
+    font-size: 3vw;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.pilar2{
+    position: absolute;
+    right: 10vw;
+    top: 50%;
+    height: max-content;
+    transform: translate(-0%, -50%);
+    color: #fff;
+    font-size: 3vw;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }

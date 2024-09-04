@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(img/exercicio-10/fundo.png);
+    font-family: "Nerko One";
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35vw;
+    height: 40vh;
+    border-radius: 50px;
+    background-color: aqua;
+
+    & input{
+        height: 4vh;
+        width: 12vw;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+    }
+
+    & button{
+        height: 4vh;
+        width: 4vw;
+    }
+}
+
+#resultado{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1vw;
+}
