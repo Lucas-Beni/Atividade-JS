@@ -1,0 +1,97 @@
+body {
+    background: url("img/estoque/estoque.jfif") no-repeat fixed left bottom;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #0099ff;
+}
+
+h1 {
+    height: 8vh;
+    width: 20vw;
+    background-color: #bfbcd9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#adciona {
+    height: 4vh;
+    width: 12vw;
+    border-radius: 10px;
+    position: absolute;
+    top: 35vh;
+    left: 10vw;
+}
+
+.aBotao {
+    height: 4vh;
+    width: 6vw;
+    background-color: #34c23b;
+    border-radius: 8px;
+    position: absolute;
+    top: 35vh;
+    left: 25vw;
+}
+
+.aBotao:hover {
+    outline: 1px solid #34c23b;
+    cursor: pointer;
+}
+
+#remove {
+    height: 4vh;
+    width: 12vw;
+    border-radius: 10px;
+    position: absolute;
+    top: 55vh;
+    left: 10vw;
+}
+
+.rBotao {
+    height: 4vh;
+    width: 6vw;
+    background-color: #c23434;
+    border-radius: 8px;
+    position: absolute;
+    top: 55vh;
+    left: 25vw;
+}
+
+.rBotao:hover {
+    outline: 1px solid #c23434;
+    cursor: pointer;
+}
+
+.lBotao {
+    height: 4vh;
+    width: 6vw;
+    background-color: #bfbcd9;
+    border-radius: 8px;
+    position: absolute;
+    top: 70vh;
+    left: 18vw;
+}
+
+.lBotao:hover {
+    outline: 1px solid #bfbcd9;
+    cursor: pointer;
+}
+
+#lista {
+    height: 50vh;
+    width: 30vw;
+    background-color: #bfbcd94b;
+    border: 3px solid #000;
+    border-radius: 10px;
+    position: absolute;
+    top: 35vh;
+    right: 10vw;
+}

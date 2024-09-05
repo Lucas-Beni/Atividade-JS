@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <script src="estoque.html"></script>
-    <link rel="stylesheet" href="">
+    <script src="estoque.js"></script>
+    <link rel="stylesheet" href="estoque.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque</title>
 </head>
 <body>
+    <a href="index.html" id="voltar"><- voltar</a>
+    <h1>Controle de estoque</h1>
     <input type="text" id="adciona" placeholder="Adcionar item">
-    <button onclick="">Adcionar</button>
+    <button onclick="add()" class="aBotao">Adcionar</button>
     <input type="text" id="remove" placeholder="Remover item">
-    <button onclick="">Remover</button>
-    <button onclick="exibe"></button>
+    <button onclick="rem()" class="rBotao">Remover</button>
+    <button onclick="exibe()" class="lBotao">Ver itens</button>
     <div id="lista"></div>
 </body>
 </html>

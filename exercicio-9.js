@@ -27,12 +27,11 @@ function verificarSenha(){
 
     switch (estado) {
         case "":
-            document.getElementById("resultado").innerHTML = "Senha criada com sucesso!";
+            document.getElementById("resultado").innerHTML = `Senha criada com sucesso!`;
             break;
         default:
-            document.getElementById("resultado").innerHTML = "Por favor digite novamente!<br>Sua senha deve conter:<br><br>-Entre 8 e 16 caracteres<br>-Pelo menos uma letra maiúscula<br>-Pelo menos um número<br>-Pelo menos um caractere especial" ;
+            document.getElementById("resultado").innerHTML = `Por favor digite novamente! Sua senha deve conter:<br><br>Entre 8 e 16 caracteres, Pelo menos uma letra maiúscula, Pelo menos um número, Pelo menos um caractere especial` ;
             break;
 
     }
 }
-

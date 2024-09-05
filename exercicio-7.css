@@ -1,0 +1,114 @@
+body {
+    background: url("img/exercicio-7/calcFrete.jfif") no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    height: 5vh;
+    width: 20vw;
+    background-color: #ffc61a;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    height: 5vh;
+    width: 8vw;
+    background-color: #ffc61a;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover {
+    outline: 2px solid #fff;
+    cursor: pointer;
+}
+
+#local {
+    height: 5vh;
+    width: 8vw;
+    background-color: #92a8b3;
+    border: 2px solid #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+#local:hover {
+    outline: 3px solid #fff;
+    cursor: pointer;
+}
+
+.local {
+    font-size: 3vh;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #0099ff;
+}
+
+#peso {
+    height: 5vh;
+    width: 8vw;
+    background-color: #92a8b3;
+    border: 2px solid #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+#peso:hover {
+    outline: 3px solid #fff;
+    cursor: text;
+}
+.peso {
+    width: max-content;
+    font-size: 3vh;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+#result {
+    height: 15vh;
+    width: 40vw;
+    background-color: #92a8b3;
+    border: 3px solid #000;
+    border-radius: 10px;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

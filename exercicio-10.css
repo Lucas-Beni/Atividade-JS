@@ -7,10 +7,25 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #0099ff;
+}
+
 body{
     min-height: 100vh;
     background-image: url(img/exercicio-10/fundo.png);
     font-family: "Nerko One";
+}
+
+h1{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
+    color: rgb(75, 49, 49);
 }
 
 .container{
@@ -24,11 +39,11 @@ body{
     width: 35vw;
     height: 40vh;
     border-radius: 50px;
-    background-color: aqua;
+    background-color: rgb(103, 179, 223);
 
     & input{
         height: 4vh;
-        width: 12vw;
+        width: 14vw;
         border: none;
         outline: none;
         border-radius: 10px;
@@ -37,6 +52,16 @@ body{
     & button{
         height: 4vh;
         width: 4vw;
+        cursor: pointer;
+        transition: .5s;
+        border-radius: 10px;
+        border: none;
+    }
+
+    & button:hover{
+        background-color: #338b27;
+        color: #fff;
+        border: 1px solid #fff;
     }
 }
 
@@ -46,4 +71,5 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.1vw;
+    color: rgb(75, 49, 49);
 }

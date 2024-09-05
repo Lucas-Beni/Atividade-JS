@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="exercicio-7.js"></script>
+    <link rel="stylesheet" href="exercicio-7.css">
     <title>Calculadora de frete</title>
 </head>
 <body>
-    <label for="local">Informe a região da entrega.</label>
+    <a href="index.html" id="voltar"><- voltar</a>
+    <h1>Calculadora de Frete</h1>
+    <label for="local" class="local">Informe a região da entrega.</label>
     <select id="local">
         <option></option>
         <option value="norte">Norte</option>
         <option value="sul">Sul</option>
         <option value="centroOeste">Centro-Oeste</option>
     </select>
+    <label for="peso" class="peso">Informe o peso do produto.</label>
     <input type="number" id="peso">
     <button onclick="calc()">Calcular</button>
     <div id="result"></div>
