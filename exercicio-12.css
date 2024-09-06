@@ -1,12 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Play", sans-serif;
 }
 
 body{
     background-image: url(img/exercicio-12/matematica.png);
-    background-position: ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+    & h1{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        color: #000000;
+        font-size: 2vw;
+        background-color: aquamarine;
+        border: .5vw solid #000;
+        border-radius: 5vw;
+        width: 30vw;
+        text-align: center;
+
+    }
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #0099ff;
+}
+
+.container{
+    width: 40vw;
+    height: 55vh;
+    background-color: aquamarine;
+    border-radius: 5vw;
+    border: .5vw solid #000;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & input{
+        width: 15vw;
+        height: 5vh;
+        outline: none;
+        border-radius: 10px;
+    }
+
+    & select{
+        height: 3.5vh;
+        outline: none;
+        border-radius: 10px;
+    }
+
+    & button{
+        height: 5vh;
+        width: 5vw;
+        cursor: pointer;
+        transition: .5s;
+        border-radius: 10px;
+        border: none;
+    }
+
+    & button:hover{
+        background-color: #338b27;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
+
+.container2{
+    width: 40vw;
+    height: 55vh;
+    background-color: aquamarine;
+    border-radius: 5vw;
+    border: .5vw solid #000;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & #resultado{
+        font-size: 1.5vw;
+        color: #000;
+    }
 }
