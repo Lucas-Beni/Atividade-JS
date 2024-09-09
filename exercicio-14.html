@@ -3,40 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio-14.css">
     <title>Pessoa Mais Velha</title>
 </head>
 <body>
+    <a href="index.html" id="voltar"><- voltar</a>
+    <h1>O mais velho</h1>
+    <div class="container">
+        <div class="container2">
+            <label for="nome1">Nome 1:
+            <input type="text" id="nome1"></label>
+            <label for="idade1">Idade 1:
+            <input type="number" id="idade1"></label>
 
-    <h1>O mais idoso</h1>
+            <label for="nome2">Nome 2:
+            <input type="text" id="nome2"></label>
+            <label for="idade2">Idade 2:
+            <input type="number" id="idade2"></label>
+        </div>
+        <div class="container3">
+            <label for="nome3">Nome 3:
+            <input type="text" id="nome3"></label>
+            <label for="idade3">Idade 3:
+            <input type="number" id="idade3"></label>
+        </div>
+        <div class="container4">
+            <label for="nome4">Nome 4:
+            <input type="text" id="nome4"></label>
+            <label for="idade4">Idade 4:
+            <input type="number" id="idade4"></label>
 
-    <div id="inputs">
-        <label for="nome1">Nome 1:</label>
-        <input type="text" id="nome1"><br>
-        <label for="idade1">Idade 1:</label>
-        <input type="number" id="idade1"><br><br>
-
-        <label for="nome2">Nome 2:</label>
-        <input type="text" id="nome2"><br>
-        <label for="idade2">Idade 2:</label>
-        <input type="number" id="idade2"><br><br>
-
-        <label for="nome3">Nome 3:</label>
-        <input type="text" id="nome3"><br>
-        <label for="idade3">Idade 3:</label>
-        <input type="number" id="idade3"><br><br>
-
-        <label for="nome4">Nome 4:</label>
-        <input type="text" id="nome4"><br>
-        <label for="idade4">Idade 4:</label>
-        <input type="number" id="idade4"><br><br>
-
-        <label for="nome5">Nome 5:</label>
-        <input type="text" id="nome5"><br>
-        <label for="idade5">Idade 5:</label>
-        <input type="number" id="idade5"><br><br>
+            <label for="nome5">Nome 5:
+            <input type="text" id="nome5"></label>
+            <label for="idade5">Idade 5:
+            <input type="number" id="idade5"></label>
+        </div>
+        
+        <button onclick="MaisVelho()">Quem é o mais velho?</button>
     </div>
-
-    <button onclick="MaisVelho()">Quem é o mais velho ?</button>
     <p id="resultado"></p>
 
     <script src="exercicio-14.js"></script>

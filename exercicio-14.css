@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(#ddbb89, #fff);
+
+    & h1{
+        position:absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #0099ff;
+}
+
+.container{
+    width: 45vw;
+    height: 45vh;
+    background-color: rgb(219, 214, 191);
+    border-radius: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & .container2{
+        position: absolute;
+        left: 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .container3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .container4{
+        position: absolute;
+        right: 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    & input{
+        height: 3vh;
+        border-radius: 1vw;
+        outline: none;
+    }
+
+    & input[type="text"]{
+        margin-bottom: 1vh;
+    }
+
+    & input[type="number"]{
+        margin-bottom: 3vh;
+    }
+
+    & input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+    & button{
+        height: 5vh;
+        width: 5vw;
+        cursor: pointer;
+        border-radius: 10px;
+        border: .1vw solid #000;
+        position: absolute;
+        bottom: 8vh;
+        transition: .5s;
+    }
+
+    & button:hover{
+        background-color: #338b27;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
