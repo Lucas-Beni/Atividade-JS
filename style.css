@@ -23,6 +23,16 @@ body{
     }
 }
 
+.participantes{
+    color: #fff;
+    text-align: center;
+    width: 10vw;
+    position: absolute;
+    right: 1vw;
+    bottom: 5vh;
+    font-size: 1.3vw;
+}
+
 .elseif{
     height: 10vh;
     width: 5.2vw;
